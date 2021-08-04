@@ -1,0 +1,12 @@
+
+
+Steps to build:
+
+ng command only run from CMD when run as an administrator
+
+ng command is stored in
+C:\Users\amols2\AppData\Roaming\npm
+
+even after adding it to Path variale, ng command is not recognizing
+
+only when cmd run as admin it is recognized
