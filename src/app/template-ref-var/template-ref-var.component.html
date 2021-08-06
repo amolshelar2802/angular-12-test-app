@@ -1,0 +1,16 @@
+
+<h2>
+    Template Reference Variables
+</h2>
+
+<div>
+    <input #textInput type="text">
+</div>
+
+<div>
+    <button (click)="LogMessage(textInput.value)">Log Message</button>
+</div>
+
+<div>
+    <button (click)="LogMessage(textInput)">Log Ref Var</button>
+</div>

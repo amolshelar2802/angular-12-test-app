@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventBindingComponent implements OnInit {
 
+  public greet = "";
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onClick()
+  {
+    console.log('button clicked');
+  }
+
+  changeText(firstName: string, lastName: string)
+  {
+    this.greet = firstName + " " + lastName;
   }
 
 }

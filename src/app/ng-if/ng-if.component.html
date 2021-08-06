@@ -1,0 +1,45 @@
+
+
+<h2>*ngIf regular</h2>
+<div>
+    <h4 *ngIf="true">Normal if code output</h4>
+</div>
+
+<h2>*ngIf using property</h2>
+<div>
+    <h4 *ngIf="showText">Normal if code uisng property output</h4>
+</div>
+
+
+<h2>*ngIf using If....else using Temp ref var - Part 1</h2>
+<div>
+    <h4 *ngIf="showText; else elseBlock">if block executed</h4>
+    <ng-template #elseBlock>
+        <h4>else block executed</h4>
+    </ng-template>
+</div>
+
+
+<h2>*ngIf using If....else using Temp ref var - part 2</h2>
+
+<div *ngIf="showText; then thenBlock; else elseBlock"></div>
+<ng-template #thenBlock>
+    <h4>if/then block executed</h4>
+</ng-template>
+<ng-template #elseBlock>
+    <h4>else block executed</h4>
+</ng-template>
+
+<h2>*ngIf using function</h2>
+<div>
+    <h4 [innerText]="name" *ngIf="show()">using function showing result</h4>
+</div>
+
+<!-- 
+<div>
+    <h4 *ngIf="showText; else elseBlock">if block executed</h4>
+    <ng-template #elseBlock>
+        <h4>else block executed</h4>
+    </ng-template>
+</div>
+ -->
