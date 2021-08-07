@@ -1,1 +1,23 @@
-<p>ng-for works!</p>
+
+
+<h2>ng For Directive</h2>
+
+<table border="0" cellspacing="5" cellpadding="5" width="50%">
+    <tr>
+        <th>Rank</th>
+        <th>Value</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Odd</th>
+        <th>Even</th>
+    </tr>
+    <tr *ngFor="let color of colors; index as i; first as f; last as l; even as e; odd as o;">
+        <td>{{i + 1}}</td>
+        <td>{{color}}</td>
+        <td>{{f ? 'Yes' : 'No'}}</td>
+        <td>{{l ? 'Yes' : 'No'}}</td>
+        <td>{{( (i+1) %2!=0) ? 'Yes' : 'No'}}</td>
+        <td>{{( (i+1) %2==0) ? 'Yes' : 'No'}}</td>
+    </tr>
+</table>
+

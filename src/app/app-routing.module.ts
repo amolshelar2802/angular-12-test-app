@@ -14,9 +14,12 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
-import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { PipesComponent } from './pipes/pipes.component';
-
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { SvgComponent } from './svg/svg.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent  },
@@ -31,9 +34,10 @@ const routes: Routes = [
   { path: 'ng-if', component: NgIfComponent  },
   { path: 'ng-switch', component: NgSwitchComponent  },
   { path: 'ng-for', component: NgForComponent  },
-  { path: 'component-nteraction', component: ComponentInteractionComponent  },
   { path: 'pipes', component: PipesComponent  },
-
+  { path: 'parent', component: ParentComponent  },
+  { path: 'svg', component: SvgComponent  },
+  { path: 'emp-list', component: EmployeeListComponent  },
   
   { path: '', redirectTo:'/home', pathMatch:'full' },
   { path: '**', component:PageNotFoundComponent }
@@ -47,5 +51,5 @@ const routes: Routes = [
 export class AppRoutingModule { }
 export const routingComponents = [TestComponentComponent, HomeComponent, StringInterpolationComponent, PropertyBindingComponent,
 ClassBindingComponent, StyleBindingComponent, EventBindingComponent, PageNotFoundComponent, NgMaterialComponent,
-TemplateRefVarComponent, TwoWayBindingComponent, NgIfComponent, NgSwitchComponent, NgForComponent, ComponentInteractionComponent,
-PipesComponent];
+TemplateRefVarComponent, TwoWayBindingComponent, NgIfComponent, NgSwitchComponent, NgForComponent,
+PipesComponent, ParentComponent, ChildComponent, SvgComponent, EmployeeListComponent, EmployeeDetailsComponent];

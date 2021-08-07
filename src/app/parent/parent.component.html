@@ -1,0 +1,14 @@
+
+
+<div class="divParent">
+
+
+<br><br><br>
+<h2>Hi.... I am Parent</h2>
+
+<h2>{{message}}</h2>
+
+<app-child [parentData]="message" (childEvent)="message=$event" ></app-child>
+
+
+</div>
