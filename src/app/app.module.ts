@@ -11,12 +11,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmployeeService } from '../services/employee.service';
 import { DepartmentService } from './services/department.service';
 import { HttpClientModule } from '@angular/common/http';
+import { DepartmentOverviewComponent } from './components/department-overview/department-overview.component';
+import { DepartmentContactComponent } from './components/department-contact/department-contact.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    DepartmentOverviewComponent,
+    DepartmentContactComponent
   ],
   imports: [
     BrowserModule,

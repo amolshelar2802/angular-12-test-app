@@ -4,6 +4,17 @@
 <h4>Id : {{department.id}}</h4>
 <h4>Name : {{department.name}}</h4>
 
+<br><br>
+
+<div>
+    <a (click) = "goToOverview()">Overview</a>
+    <a (click) = "goToContact()">Contact</a>
+</div>
+<br>
+<div>
+    <router-outlet></router-outlet>
+</div>
+<br><br>
 <div>
     <a (click)="goToPrevious()">Previuos</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
