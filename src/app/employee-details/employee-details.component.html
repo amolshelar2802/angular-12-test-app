@@ -2,11 +2,22 @@
     <h2>Employee Details</h2>
 </div>
 
-<div *ngFor = "let emp of employees">
-    <span>{{emp.id}}</span>
+<table border="1" cellspacing = "5" cellpadding = "5" style="width:25%">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr *ngFor = "let emp of employees">
+        <td>
+            {{emp.id}}
+        </td>
+        <td>
+            {{emp.name}}
+        </td>
+        <td>
+            {{emp.age}}
+        </td>
+    </tr>
 
-    <span>{{emp.name}}</span>
-
-    <span>{{emp.age}}</span>
-    
-</div>
+</table>

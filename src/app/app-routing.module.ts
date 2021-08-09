@@ -20,6 +20,8 @@ import { ChildComponent } from './child/child.component';
 import { SvgComponent } from './svg/svg.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { DepartmentsComponent } from './components/departments/departments.component';
+import { DepartmentDetailsComponent } from './components/department-details/department-details.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent  },
@@ -38,6 +40,8 @@ const routes: Routes = [
   { path: 'parent', component: ParentComponent  },
   { path: 'svg', component: SvgComponent  },
   { path: 'emp-list', component: EmployeeListComponent  },
+  { path: 'departments', component: DepartmentsComponent  },
+  { path: 'departments/:id', component: DepartmentDetailsComponent  },
   
   { path: '', redirectTo:'/home', pathMatch:'full' },
   { path: '**', component:PageNotFoundComponent }
@@ -52,4 +56,5 @@ export class AppRoutingModule { }
 export const routingComponents = [TestComponentComponent, HomeComponent, StringInterpolationComponent, PropertyBindingComponent,
 ClassBindingComponent, StyleBindingComponent, EventBindingComponent, PageNotFoundComponent, NgMaterialComponent,
 TemplateRefVarComponent, TwoWayBindingComponent, NgIfComponent, NgSwitchComponent, NgForComponent,
-PipesComponent, ParentComponent, ChildComponent, SvgComponent, EmployeeListComponent, EmployeeDetailsComponent];
+PipesComponent, ParentComponent, ChildComponent, SvgComponent, EmployeeListComponent, EmployeeDetailsComponent,
+DepartmentsComponent, DepartmentDetailsComponent];
