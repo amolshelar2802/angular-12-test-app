@@ -12,4 +12,8 @@ export class DepartmentOverviewComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  alert()
+  {
+    alert('Submitted....');
+  }
 }

@@ -1,29 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ClassBindingComponent } from './class-binding/class-binding.component';
-import { EventBindingComponent } from './event-binding/event-binding.component';
-import { HomeComponent } from './home/home.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { PropertyBindingComponent } from './property-binding/property-binding.component';
-import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
-import { StyleBindingComponent } from './style-binding/style-binding.component';
-import { TestComponentComponent } from './test-component/test-component.component';
-import { NgMaterialComponent } from './ng-material/ng-material.component';
-import { TemplateRefVarComponent } from './template-ref-var/template-ref-var.component';
-import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
-import { NgIfComponent } from './ng-if/ng-if.component';
-import { NgSwitchComponent } from './ng-switch/ng-switch.component';
-import { NgForComponent } from './ng-for/ng-for.component';
-import { PipesComponent } from './pipes/pipes.component';
-import { ParentComponent } from './parent/parent.component';
-import { ChildComponent } from './child/child.component';
-import { SvgComponent } from './svg/svg.component';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
-import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { ClassBindingComponent } from './components/class-binding/class-binding.component';
+import { EventBindingComponent } from './components/event-binding/event-binding.component';
+import { HomeComponent } from './components/home/home.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { PropertyBindingComponent } from './components/property-binding/property-binding.component';
+import { StringInterpolationComponent } from './components/string-interpolation/string-interpolation.component';
+import { StyleBindingComponent } from './components/style-binding/style-binding.component';
+import { TestComponentComponent } from './components/test-component/test-component.component';
+import { NgMaterialComponent } from './components/ng-material/ng-material.component';
+import { TemplateRefVarComponent } from './components/template-ref-var/template-ref-var.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { NgIfComponent } from './components/ng-if/ng-if.component';
+import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
+import { NgForComponent } from './components/ng-for/ng-for.component';
+import { PipesComponent } from './components/pipes/pipes.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
+import { SvgComponent } from './components/svg/svg.component';
+import { EmployeeListComponent } from './components/employee-list/employee-list.component';
+import { EmployeeDetailsComponent } from './components/employee-details/employee-details.component';
 import { DepartmentsComponent } from './components/departments/departments.component';
 import { DepartmentDetailsComponent } from './components/department-details/department-details.component';
 import { DepartmentOverviewComponent } from './components/department-overview/department-overview.component';
 import { DepartmentContactComponent } from './components/department-contact/department-contact.component';
+import { TemplateFormsComponent } from './components/template-forms/template-forms.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,8 @@ const routes: Routes = [
   { path: 'parent', component: ParentComponent  },
   { path: 'svg', component: SvgComponent  },
   { path: 'emp-list', component: EmployeeListComponent  },
+  { path: 'template-forms', component: TemplateFormsComponent  },
+
   { path: 'departments', component: DepartmentsComponent  },
   { 
     path: 'departments/:id', 
@@ -67,4 +70,5 @@ TemplateRefVarComponent, TwoWayBindingComponent, NgIfComponent, NgSwitchComponen
 PipesComponent, ParentComponent, ChildComponent, SvgComponent, EmployeeListComponent, EmployeeDetailsComponent,
 DepartmentsComponent, DepartmentDetailsComponent,
 DepartmentOverviewComponent,
-DepartmentContactComponent];
+DepartmentContactComponent,
+TemplateFormsComponent];

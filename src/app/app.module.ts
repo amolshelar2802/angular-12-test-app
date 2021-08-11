@@ -8,19 +8,16 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { EmployeeService } from '../services/employee.service';
+import { EmployeeService } from './services/employee.service';
 import { DepartmentService } from './services/department.service';
 import { HttpClientModule } from '@angular/common/http';
-import { DepartmentOverviewComponent } from './components/department-overview/department-overview.component';
-import { DepartmentContactComponent } from './components/department-contact/department-contact.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents,
-    DepartmentOverviewComponent,
-    DepartmentContactComponent
+    routingComponents
   ],
   imports: [
     BrowserModule,
