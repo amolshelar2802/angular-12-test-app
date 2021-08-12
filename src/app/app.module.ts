@@ -13,7 +13,6 @@ import { DepartmentService } from './services/department.service';
 import { HttpClientModule } from '@angular/common/http';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

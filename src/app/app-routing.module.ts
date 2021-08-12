@@ -25,7 +25,8 @@ import { DepartmentDetailsComponent } from './components/department-details/depa
 import { DepartmentOverviewComponent } from './components/department-overview/department-overview.component';
 import { DepartmentContactComponent } from './components/department-contact/department-contact.component';
 import { TemplateFormsComponent } from './components/template-forms/template-forms.component';
-
+import { FormsComponent } from './components/forms/forms.component';
+import { ReactiveFormsComponent } from './components/reactive-forms/reactive-forms.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent  },
@@ -44,7 +45,8 @@ const routes: Routes = [
   { path: 'parent', component: ParentComponent  },
   { path: 'svg', component: SvgComponent  },
   { path: 'emp-list', component: EmployeeListComponent  },
-  { path: 'template-forms', component: TemplateFormsComponent  },
+
+
 
   { path: 'departments', component: DepartmentsComponent  },
   { 
@@ -52,6 +54,18 @@ const routes: Routes = [
     component: DepartmentDetailsComponent,
     children : [ { path: "overview", component: DepartmentOverviewComponent }, 
                 { path: "contact", component: DepartmentContactComponent }]
+  },
+
+  //{ path: 'forms', component: FormsComponent  },
+  // { path: 'forms', component: FormsComponent  },
+  // { path: 'template-forms', component: TemplateFormsComponent  },
+  // { path: 'reactive-forms', component: ReactiveFormsComponent  },
+  
+  { 
+    path: 'forms', 
+    component: FormsComponent,
+    children : [ { path: "template-forms", component: TemplateFormsComponent }, 
+                { path: "reactive-forms", component: ReactiveFormsComponent }]
   },
   
   { path: '', redirectTo:'/home', pathMatch:'full' },
@@ -71,4 +85,7 @@ PipesComponent, ParentComponent, ChildComponent, SvgComponent, EmployeeListCompo
 DepartmentsComponent, DepartmentDetailsComponent,
 DepartmentOverviewComponent,
 DepartmentContactComponent,
-TemplateFormsComponent];
+TemplateFormsComponent,
+FormsComponent,
+FormsComponent,
+ReactiveFormsComponent];
