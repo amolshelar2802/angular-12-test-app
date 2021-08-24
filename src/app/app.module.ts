@@ -11,12 +11,20 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmployeeService } from './services/employee.service';
 import { DepartmentService } from './services/department.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FullUserNamePipe } from './custom-pipes/full-user-name.pipe';
+import { SquarePipe } from './custom-pipes/square.pipe';
+import { PluralizePipe } from './custom-pipes/pluralize.pipe';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    FullUserNamePipe,
+    SquarePipe,
+    PluralizePipe
+    
   ],
   imports: [
     BrowserModule,

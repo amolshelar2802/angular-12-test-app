@@ -1,0 +1,30 @@
+
+<h1>Custom Pipes</h1>
+
+<div class="form-group">
+    <label>Enter FirstName:</label>
+    <input type="text" [(ngModel)]= "firstName" class="form-control" >
+
+</div>
+
+<div class="form-group">
+    <label>Enter LastName:</label>
+    <input type="text" [(ngModel)]= "lastName"  class="form-control">
+</div>
+
+<div class="form-group">
+    <label>{{ firstName | fullUserName : lastName }}</label>
+    
+</div>
+
+<div class="form-group">
+    <label>Enter Number To Square</label>
+    <input type="text" [(ngModel)]= "numberToSquare"  class="form-control">
+    <label>{{ numberToSquare | square }}</label>
+</div>
+
+<div class="form-group">
+    <label>Enter Seconds</label>
+    <input type="range" [(ngModel)]= "minutes" class="form-control">
+    <label>{{ minutes | pluralize : "minute" }}</label>
+</div>

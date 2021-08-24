@@ -27,6 +27,9 @@ import { DepartmentContactComponent } from './components/department-contact/depa
 import { TemplateFormsComponent } from './components/template-forms/template-forms.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { ReactiveFormsComponent } from './components/reactive-forms/reactive-forms.component';
+import { ReactiveFormsFormbuilderComponent } from './components/reactive-forms-formbuilder/reactive-forms-formbuilder.component';
+import { ReactiveFormsSimpleValidationComponent } from './components/reactive-forms-simple-validation/reactive-forms-simple-validation.component';
+import { CustomPipesComponent } from './components/custom-pipes/custom-pipes.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent  },
@@ -42,6 +45,7 @@ const routes: Routes = [
   { path: 'ng-switch', component: NgSwitchComponent  },
   { path: 'ng-for', component: NgForComponent  },
   { path: 'pipes', component: PipesComponent  },
+  { path: 'custom-pipes', component: CustomPipesComponent  },
   { path: 'parent', component: ParentComponent  },
   { path: 'svg', component: SvgComponent  },
   { path: 'emp-list', component: EmployeeListComponent  },
@@ -65,7 +69,9 @@ const routes: Routes = [
     path: 'forms', 
     component: FormsComponent,
     children : [ { path: "template-forms", component: TemplateFormsComponent }, 
-                { path: "reactive-forms", component: ReactiveFormsComponent }]
+                { path: "reactive-forms", component: ReactiveFormsComponent },
+                { path: "form-builder", component: ReactiveFormsFormbuilderComponent },
+                { path: "simple-validation", component: ReactiveFormsSimpleValidationComponent }]
   },
   
   { path: '', redirectTo:'/home', pathMatch:'full' },
@@ -88,4 +94,7 @@ DepartmentContactComponent,
 TemplateFormsComponent,
 FormsComponent,
 FormsComponent,
-ReactiveFormsComponent];
+ReactiveFormsComponent,
+ReactiveFormsFormbuilderComponent,
+ReactiveFormsSimpleValidationComponent,
+CustomPipesComponent];
