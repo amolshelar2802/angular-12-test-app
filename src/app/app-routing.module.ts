@@ -30,6 +30,7 @@ import { ReactiveFormsComponent } from './components/reactive-forms/reactive-for
 import { ReactiveFormsFormbuilderComponent } from './components/reactive-forms-formbuilder/reactive-forms-formbuilder.component';
 import { ReactiveFormsSimpleValidationComponent } from './components/reactive-forms-simple-validation/reactive-forms-simple-validation.component';
 import { CustomPipesComponent } from './components/custom-pipes/custom-pipes.component';
+import { CustomDirectiveComponent } from './components/custom-directive/custom-directive.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent  },
@@ -49,7 +50,7 @@ const routes: Routes = [
   { path: 'parent', component: ParentComponent  },
   { path: 'svg', component: SvgComponent  },
   { path: 'emp-list', component: EmployeeListComponent  },
-
+  { path: 'custom-directive', component: CustomDirectiveComponent  },
 
 
   { path: 'departments', component: DepartmentsComponent  },
@@ -97,4 +98,5 @@ FormsComponent,
 ReactiveFormsComponent,
 ReactiveFormsFormbuilderComponent,
 ReactiveFormsSimpleValidationComponent,
-CustomPipesComponent];
+CustomPipesComponent,
+CustomDirectiveComponent];

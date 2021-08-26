@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FullUserNamePipe } from './custom-pipes/full-user-name.pipe';
 import { SquarePipe } from './custom-pipes/square.pipe';
 import { PluralizePipe } from './custom-pipes/pluralize.pipe';
+import { HighlightDirective } from './highlight.directive';
+
 
 
 
@@ -23,7 +25,8 @@ import { PluralizePipe } from './custom-pipes/pluralize.pipe';
     routingComponents,
     FullUserNamePipe,
     SquarePipe,
-    PluralizePipe
+    PluralizePipe,
+    HighlightDirective
     
   ],
   imports: [
